@@ -1,0 +1,13 @@
+{
+  "name": "web3modal-vue-mixin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "mixin.js",
+  "scripts": {},
+  "author": "Stew",
+  "license": "MIT",
+  "dependencies": {
+    "web3": "^1.6.0",
+    "web3modal": "^1.9.4"
+  }
+}
