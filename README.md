@@ -16,7 +16,7 @@ import Web3ModalMixin from "./Vue-Web3Modal-Mixin/mixin.js";
 
 
 ```
-const web3ModalOptions = {
+const Web3ModalOptions = {
     network: "mainnet",                 // optional
     cacheProvider: true,                // optional
     disableInjectedProvider: false,     // optional
@@ -34,9 +34,10 @@ const web3ModalOptions = {
 new Vue({
     // ...
     mixins: [
-        Web3ModalMixin(web3ModalOptions),
+        Web3ModalMixin,
         // ...
     ],
+    Web3ModalOptions,
     render: h => h(App)
 }).$mount('#app');
 ```
@@ -70,7 +71,6 @@ ___
 ### Data
 - `web3::Object<Web3>`
 - `web3Provider::Object<Web3.provider>` 
-- `cachedWeb3Provider::String`
 - `web3Account::String`
 - `web3Chain::Number`
 
